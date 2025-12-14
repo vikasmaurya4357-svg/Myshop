@@ -21,7 +21,7 @@ Key Features
           Users can add, edit, and manage multiple addresses for easy and accurate order delivery.
 
 6. Admin Dashboard (Optional if applicable):
-            Provides administrative access to manage products, orders, and users efficiently. Admins can monitor sales, update product details, and generate reports.
+           Provides administrative access to manage products, orders, and users efficiently. Admins can monitor sales, update product details, and generate reports.
 
 7. Data Retrieval & Reports:
           The system allows retrieval and display of all relevant data, including user details, product inventory, and order history, facilitating easy management and monitoring.
