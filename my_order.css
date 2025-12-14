@@ -1,0 +1,322 @@
+.main-content {
+    margin-left: 240px;
+    margin-top: 0%;
+    padding: 20px;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.filter-btn {
+    padding: 10px 16px;
+    border-radius: 50px;
+    border: 1px solid #cce0ff;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s, transform 0.2s;
+}
+
+.filter-btn:hover {
+    transform: scale(1.05);
+}
+
+.filter-btn.active {
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(11, 105, 255, 0.25);
+}
+
+/*ORDER CARD*/
+.order-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.order-card:hover {
+    transform: translateY(-5px);
+}
+
+/* PRODUCT ITEM */
+.product-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 12px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.product-item:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.product-item img {
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-right: 18px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 18px;
+    color: #0d1a35;
+}
+
+.product-meta {
+    font-size: 14px;
+    color: #555;
+    margin-top: 4px;
+}
+
+/* STATUS PILLS*/
+.status-pill {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.status-Ordered {
+    background: linear-gradient(135deg, #cce0ff, #0b69ff);
+    color: #fff;
+}
+
+.status-Packed {
+    background: linear-gradient(135deg, #fff4e6, #ff9800);
+    color: #fff;
+}
+
+.status-Shipped {
+    background: linear-gradient(135deg, #e0ffe6, #2f855a);
+    color: #fff;
+}
+
+.status-Out\ for\ Delivery {
+    background: linear-gradient(135deg, #fff4e6, #ff9800);
+    color: #fff;
+}
+
+.status-Delivered {
+    background: linear-gradient(135deg, #d4ffd6, #0a7a44);
+    color: #fff;
+}
+
+.status-Cancelled {
+    background: linear-gradient(135deg, #ffd6d6, #e53935);
+    color: #fff;
+}
+
+/*ACTION BUTTONS */
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.btn {
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s, transform 0.2s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn.track {
+    background: #eef8ff;
+    color: var(--primary);
+}
+
+.btn.track:hover {
+    background: var(--btn-gradient);
+    color: #fff;
+}
+
+.btn.invoice {
+    background: var(--btn-gradient);
+    color: #fff;
+}
+
+.btn.invoice:hover {
+    opacity: 0.9;
+}
+
+.btn.cancel {
+    background: #fff0f0;
+    color: var(--danger);
+    border: 1px solid #ffbaba;
+}
+
+.btn.cancel:hover {
+    background: var(--danger);
+    color: #fff;
+}
+
+/*MESSAGES */
+.msg {
+    padding: 14px 18px;
+    background: #fffef0;
+    border-radius: 12px;
+    border: 1px solid #fff2c2;
+    color: #856404;
+    margin-bottom: 20px;
+}
+
+.empty {
+    text-align: center;
+    padding: 50px;
+    color: #666;
+    font-size: 18px;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 880px) {
+    .product-item img {
+        width: 100px;
+        height: 100px;
+        margin-right: 14px;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .order-card {
+        padding: 16px;
+    }
+
+    .product-name {
+        font-size: 16px;
+    }
+
+    .product-meta {
+        font-size: 13px;
+    }
+
+    .status-pill {
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+
+    .actions .btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Small screens (large mobiles) */
+@media (max-width: 560px) {
+    .product-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .product-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 85px 15px 25px 15px; /* header ke liye aur thoda upar */
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .search-box {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .filter-btn {
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+        font-size: 13px;
+    }
+
+    .order-card {
+        padding: 14px;
+    }
+
+    .product-name {
+        font-size: 15px;
+    }
+
+    .product-meta {
+        font-size: 12px;
+    }
+
+    .status-pill {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+
+    .actions .btn {
+        padding: 10px 14px;
+        font-size: 13px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .msg {
+        font-size: 14px;
+        padding: 12px 14px;
+    }
+
+    .empty {
+        font-size: 16px;
+        padding: 40px 15px;
+    }
+}

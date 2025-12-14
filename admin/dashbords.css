@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color:rgba(141, 87, 195, 0.479);
+    background-size: 300% 300%;
+}
+
+@keyframes bgMove {
+    0% { background-position: left top; }
+    100% { background-position: right bottom; }
+}
+
+.dashboard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    position: fixed;
+    height: 100%;
+    backdrop-filter: blur(18px);
+    background: rgba(0, 75, 75, 0.489);
+    border-right: 2px solid rgba(255, 255, 255, 0.272);
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.324);
+    padding-top: 50px;
+}
+
+.dashboard ul {
+    padding: 5px;
+    margin: 40px;
+}
+
+.dashboard ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.dashboard ul li a {
+    display: block;
+    padding: 15px 22px;
+    color: #eaffff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: 0.35s ease;
+}
+
+.dashboard ul li a:hover {
+    background: rgba(255, 255, 255, 0.22);
+    transform: translateX(12px);
+    box-shadow: 0 0 15px rgba(0,255,255,0.6);
+}
+
+
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-radius: 10px;
+     margin-left: 300px;
+     text-align: center;   
+}
+.change {
+    background-color: #3498db;  
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.add {
+    background-color: #2ecc71;  
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.delete {
+    background-color: #e74c3c;  
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.change:hover,
+.add:hover,
+.delete:hover {
+    opacity: 0.8;
+}
+
+
+table th {
+    background: #4CAF50;
+    color: #fff;
+    padding: 14px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table td {
+    padding: 12px;
+    font-size: 15px;
+    color: #333;
+}
+
+table tr:nth-child(even){
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #e8f5e9;
+    transition: 0.3s;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+h2 {
+    width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+    box-shadow: 5px 5px 5px ;
+    background: #c2fef9ff;
+    
+}
+
+form {
+    width: 400px;
+    background: #fff;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+form input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+
+
+.btn-add, .btn-back {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+
+.btn-add {
+    background: #4CAF50;
+    border: none;
+}
+.btn-add:hover {
+    background: #45a049;
+}
+
+
+.btn-back {
+    background: #000000;
+}
+
+/* ---------------- Large Laptops / Small desktops ---------------- */
+@media (max-width: 1200px) {
+    .dashboard { width: 220px; padding-top: 45px; }
+    .main-content { margin-left: 220px; }
+    form, h2 { width: 90%; max-width: 350px; }
+}
+
+/* ---------------- Tablets / Medium screens ---------------- */
+@media (max-width: 991px) {
+    .dashboard { width: 200px; padding-top: 40px; }
+    .main-content { margin-left: 200px; }
+    form, h2 { width: 90%; max-width: 300px; font-size: 14px; }
+    form input, select { font-size: 14px; padding: 10px; width: 100%; box-sizing: border-box; }
+    .btn-add, .btn-back { font-size: 14px; padding: 10px; }
+}
+
+/* ---------------- Mobile / Small screens ---------------- */
+/* ---------------- Mobile / Small screens ---------------- */
+@media (max-width: 767px) {
+
+    /* Dashboard becomes a top menu */
+    .dashboard {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        justify-content: space-around;
+       
+    background: rgba(0, 75, 75, 0.489);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .dashboard ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .dashboard ul li {
+        border: none;
+        padding: 10px 5px;
+    }
+
+    .dashboard ul li a {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /* Table fully left-aligned */
+    table {
+        display: block;
+        width: auto;        /* take natural width */
+        min-width: 100%;    /* ensure it spans at least full screen */
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-left: 0;     /* align to left */
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 13px;
+        text-align: left;   /* optional, ensures left alignment */
+    }
+
+    h2, form {
+        width: 95%;
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    form input, select {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .btn-add, .btn-back {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}

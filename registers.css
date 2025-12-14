@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #a1c4fd);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+}
+.registerdiv {
+    background: rgba(243, 219, 219, 0.85); 
+    backdrop-filter: blur(15px);
+    padding: 60px 50px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    width: 450px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: floatForm 6s ease-in-out infinite, fadeIn 0.6s ease;
+}
+
+@keyframes floatForm {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(-20px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+.registerdiv input,
+.registerdiv textarea {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(152, 220, 237, 0.409);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.registerdiv input:focus,
+.registerdiv textarea:focus {
+    background: rgba(245,245,245,0.95);
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+.button {
+    width: 100%;
+    padding: 18px;
+    margin-top: 10px;
+    background: blue;
+    border: none;
+    border-radius: 15px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+.registerdiv p {
+    color: #333;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.registerdiv p a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.registerdiv p a:hover {
+    color: #005f99;
+    text-decoration: underline;
+}
+
+/*Laptop / Small Desktop (992px - 1200px */
+@media (max-width: 1200px) {
+    .registerdiv {
+        width: 400px;
+        padding: 50px 40px;
+    }
+
+    .registerdiv input,
+    .registerdiv textarea {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 16px;
+        font-size: 17px;
+    }
+}
+
+/*Tablet / Medium screens (768px - 991px)*/
+@media (max-width: 991px) {
+    .registerdiv {
+        width: 350px;
+        padding: 45px 35px;
+    }
+
+    .registerdiv input,
+    .registerdiv textarea {
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .button {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .registerdiv p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile / Small screens (up to 767px)*/
+@media (max-width: 767px) {
+    .registerdiv {
+        width: 95%;
+        padding: 40px 25px;
+    }
+
+    .registerdiv input,
+    .registerdiv textarea {
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .registerdiv p {
+        font-size: 13px;
+    }
+
+    .shoes {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

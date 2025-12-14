@@ -1,0 +1,261 @@
+body {
+    font-family: 'Poppins', sans-serif;
+   background-color:rgba(141, 87, 195, 0.479);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 20px 0;
+}
+
+.dashboard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    position: fixed;
+    height: 100%;
+    backdrop-filter: blur(18px);
+    background: rgba(0, 75, 75, 0.489);
+    border-right: 2px solid rgba(255, 255, 255, 0.272);
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.324);
+    padding-top: 50px;
+}
+
+.dashboard ul {
+    padding: 5px;
+    margin: 40px;
+}
+
+.dashboard ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.dashboard ul li a {
+    display: block;
+    padding: 15px 22px;
+    color: #eaffff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: 0.35s ease;
+}
+
+.dashboard ul li a:hover {
+    background: rgba(255, 255, 255, 0.22);
+    transform: translateX(12px);
+    box-shadow: 0 0 15px rgba(0,255,255,0.6);
+}
+
+
+/*Cards Grid*/
+.dash {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+/*Metric Cards*/
+.card {
+    background: linear-gradient(135deg, #ffffff, #e6f2ff);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+.card p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+.card h2 {
+    font-size: 28px;
+    margin: 10px 0 0 0;
+    color: #1a73e8;
+}
+
+/*Tables*/
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-radius: 10px;
+     margin-left: 300px;
+     text-align: center;   
+     background: white;
+     box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+table th {
+    background: #72a6ea;
+    color: white;
+    font-weight: 600;
+}
+table tr:hover {
+    background: #f1faff;
+}
+
+/* Dashboard Chart Button */
+.btn-chart {
+    display: inline-block;
+    padding: 14px 36px;
+    background: #c13c3c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-chart:hover {
+    background: #6d98d0; 
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn-chart:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Center container styling */
+div[style*="text-align:center"] {
+    margin: 40px auto;
+}
+canvas {
+    display: block;
+    max-width: 90%;
+    margin: 20px auto 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+/*Full Width Chart Container */
+.chart-container-full {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* Make the canvas occupy full width */
+.chart-container-full canvas {
+    width: 100% !important;
+    height: 400px !important; 
+}
+
+
+/* Tablets / Medium screens*/
+@media (max-width: 991px) {
+    .dashboard {
+        width: 200px;
+        padding-top: 40px;
+    }
+
+    table {
+        margin-left: 220px;
+        width: calc(100% - 220px);
+        font-size: 14px;
+    }
+
+    .dash {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 15px;
+    }
+
+    .btn-chart {
+        font-size: 16px;
+        padding: 12px 28px;
+    }
+}
+
+/* Mobile / Small screens  */
+@media (max-width: 767px) {
+    .dashboard {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        box-shadow: none;
+        padding-top: 15px;
+        backdrop-filter: none;
+    }
+
+    table {
+        margin-left: 0;
+        width: 100%;
+        font-size: 13px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .dash {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 10px;
+        margin: 20px;
+    }
+
+    h1, h2 {
+        font-size: 22px;
+        margin: 15px 0;
+    }
+
+    .btn-chart {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    canvas {
+        width: 100% !important;
+        height: 300px !important;
+        padding: 15px;
+    }
+
+    .chart-container-full {
+        padding: 15px;
+        margin: 20px 10px;
+    }
+}
+
+/* Large desktops (> 1200px) */
+@media (min-width: 1201px) {
+    .dash {
+        max-width: 1200px;
+        gap: 25px;
+    }
+    table {
+        margin-left: 300px;
+    }
+}

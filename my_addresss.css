@@ -1,0 +1,223 @@
+.main-content {
+    margin-left: 240px;
+    margin-top: 0%; 
+    padding: 20px;
+}
+
+.add-btn {
+    background: #0b69ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #0053b3;
+}
+
+.address-box {
+    background: #fff;
+    padding: 18px; 
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.address-box h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px; 
+}
+
+.address-display p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.edit-btn {
+    background: #0b69ff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.edit-btn:hover {
+    background: #0053b3;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+    margin-top: 8px; 
+}
+
+.edit-form input,
+.edit-form textarea,
+.edit-form select {
+    padding: 8px; 
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.edit-form textarea {
+    resize: vertical;
+}
+
+.edit-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #28a745;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-form button:hover {
+    background: #1e7e34;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .main-content {
+        margin-left: 200px;
+        margin-top: 70px;
+        padding: 15px;
+    }
+
+    .address-box {
+        padding: 16px;
+    }
+
+    .edit-form input,
+    .edit-form textarea,
+    .edit-form select {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    .add-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .edit-btn {
+        padding: 4px 8px;
+        font-size: 13px;
+    }
+}
+
+/* Small screens (large mobiles) */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        margin-top: 70px;
+        padding: 12px;
+    }
+
+    .address-box {
+        padding: 10px;
+        margin-bottom: 12px;
+    }
+
+    .address-box h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .address-display p {
+        font-size: 14px;
+        margin: 4px 0;
+    }
+
+    .edit-form input,
+    .edit-form textarea,
+    .edit-form select {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .edit-form button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .add-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .edit-btn {
+        padding: 4px 7px;
+        font-size: 12px;
+    }
+}
+
+/* Extra small screens (mobiles <480px) */
+@media (max-width: 480px) {
+    .main-content {
+        margin-left: 0;
+        margin-top: 60px;
+        padding: 10px;
+    }
+
+    .address-box {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .address-box h3 {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .address-display p {
+        font-size: 13px;
+        margin: 3px 0;
+    }
+
+    .edit-form input,
+    .edit-form textarea,
+    .edit-form select {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .edit-form button {
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    .add-btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .edit-btn {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+}
