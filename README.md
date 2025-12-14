@@ -1,26 +1,37 @@
 # Myshop
-A responsive e-commerce web application built with PHP and MySQL. MyShop allows users to browse products, manage their cart, and make purchases, while admins can manage products, categories, and orders. Fully responsive design ensures seamless experience on desktop, tablet, and mobile devices.
+MyShop - E-commerce Website
 
-Features:
-          User registration and login with password hashing
-          Admin dashboard for managing products, categories, and orders
-         Responsive design for mobile, tablet, and desktop
-          Product listing with images, descriptions, price, and stock
-         Secure CRUD operations for product
-          Cart functionality for users
-          Modern UI with CSS animations and hover effects
+MyShop is a PHP-based e-commerce application designed to provide a seamless online shopping experience. It features a modern user interface and robust backend functionality to manage products, users, and orders efficiently. The project uses PHP for server-side operations and MySQL for database management, ensuring secure and reliable data handling.
 
+Key Features
 
-Tech Stack:
-          PHP | MySQL | HTML | CSS | JavaScript
+1. User Registration & Login Panel:
+         This panel allows users to create an account and log in securely. Users can manage their profiles, update personal information, and recover passwords using the forgot password feature.
 
-Getting Started:
-           Clone the repository.
-            Import the database from myshop.sql.
-            Update db.php with your database credentials.
-            Run the project on a local server (XAMPP/WAMP).
+2. Product Browsing & Details Panel:
+           Users can browse products by categories, view detailed information about each product, and search for specific items. Product details include images, descriptions, price, and availability.
 
+3.Shopping Cart Panel:
+           The shopping cart allows users to add, remove, and update product quantities. It provides a seamless interface to review selected items before placing an order.
 
+4. Order Placement & Tracking Panel:
+           Users can place orders securely and view their order history. The system tracks order status, including pending, confirmed, and delivered orders, providing complete transparency.
+
+5. Address Management Panel:
+          Users can add, edit, and manage multiple addresses for easy and accurate order delivery.
+
+6. Admin Dashboard (Optional if applicable):
+            Provides administrative access to manage products, orders, and users efficiently. Admins can monitor sales, update product details, and generate reports.
+
+7. Data Retrieval & Reports:
+          The system allows retrieval and display of all relevant data, including user details, product inventory, and order history, facilitating easy management and monitoring.
+
+Technologies Used
+         Frontend: HTML, CSS, JavaScript
+         Backend: PHP
+         Database: MySQL
+
+Other Tools: XAMPP for local development
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/8ca74cda-a974-4868-90ea-569d2823ca8e" />
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3f8dd7a1-7e60-4a8b-8bfe-04c55acb7cfa" />
