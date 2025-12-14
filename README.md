@@ -6,24 +6,26 @@ MyShop is a PHP-based e-commerce application designed to provide a seamless onli
 Key Features
 
 1. User Registration & Login Panel:
-         This panel allows users to create an account and log in securely. Users can manage their profiles, update personal information, and recover passwords using the forgot password feature.
 
-2. Product Browsing & Details Panel:
-           Users can browse products by categories, view detailed information about each product, and search for specific items. Product details include images, descriptions, price, and availability.
+            This panel allows users to create an account and log in securely. Users can manage their profiles, update personal information, and recover passwords using the forgot password feature.
 
-3.Shopping Cart Panel:
+3. Product Browsing & Details Panel:
+
+              Users can browse products by categories, view detailed information about each product, and search for specific items. Product details include images, descriptions, price, and availability.
+
+5. Shopping Cart Panel:
            The shopping cart allows users to add, remove, and update product quantities. It provides a seamless interface to review selected items before placing an order.
 
-4. Order Placement & Tracking Panel:
+6. Order Placement & Tracking Panel:
            Users can place orders securely and view their order history. The system tracks order status, including pending, confirmed, and delivered orders, providing complete transparency.
 
-5. Address Management Panel:
+7. Address Management Panel:
           Users can add, edit, and manage multiple addresses for easy and accurate order delivery.
 
-6. Admin Dashboard (Optional if applicable):
+8. Admin Dashboard (Optional if applicable):
            Provides administrative access to manage products, orders, and users efficiently. Admins can monitor sales, update product details, and generate reports.
 
-7. Data Retrieval & Reports:
+9. Data Retrieval & Reports:
           The system allows retrieval and display of all relevant data, including user details, product inventory, and order history, facilitating easy management and monitoring.
 
 Technologies Used
