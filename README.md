@@ -1,5 +1,4 @@
-# Myshop
-MyShop - E-commerce Website
+# E-commerce
 
 MyShop is a PHP-based e-commerce application designed to provide a seamless online shopping experience. It features a modern user interface and robust backend functionality to manage products, users, and orders efficiently. The project uses PHP for server-side operations and MySQL for database management, ensuring secure and reliable data handling.
 
