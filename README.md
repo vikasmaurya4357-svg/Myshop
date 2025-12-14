@@ -6,12 +6,10 @@ MyShop is a PHP-based e-commerce application designed to provide a seamless onli
 Key Features
 
 1. User Registration & Login Panel:
-
-            This panel allows users to create an account and log in securely. Users can manage their profiles, update personal information, and recover passwords using the forgot password feature.
+                 This panel allows users to create an account and log in securely. Users can manage their profiles, update personal information, and recover passwords using the forgot password feature.
 
 3. Product Browsing & Details Panel:
-
-              Users can browse products by categories, view detailed information about each product, and search for specific items. Product details include images, descriptions, price, and availability.
+               Users can browse products by categories, view detailed information about each product, and search for specific items. Product details include images, descriptions, price, and availability.
 
 5. Shopping Cart Panel:
            The shopping cart allows users to add, remove, and update product quantities. It provides a seamless interface to review selected items before placing an order.
